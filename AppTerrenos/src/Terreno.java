@@ -10,6 +10,18 @@ public class Terreno{
         this.ancho = ancho;
         this.vmc = vmc;
     }
+    public void calcularArea(){
+        this.area = this.ancho * this.alto;
+    }
+    public void calcularValorTerreno(){
+        //if ternario: this.costoTerreno = this.area >= 200?(this.area * this.valorMetroCuadrado)*0.9:this.area * this.valorMetroCuadrado;
+        costoFinal = area * vmc;
+        if (area > 300){
+            costoFinal *=0.8;
+        }else if(area >= 200){
+            costoFinal *=0.9;
+        }
+    }
 
     @Override
     public String toString() {
