@@ -40,6 +40,7 @@ public class Ejecutor_Terrreno {
                 break;
             }
         }
+        System.out.println("TERRENOS CALCULADOS: ");
         for(Terreno ter : arrayTerrenos){
             ter.calcularArea();
             ter.calcularValorTerreno();
